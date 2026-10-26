@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact - Nalunkuma Dianah Lwanga | Let's turn your dreams to reality</title>
+  <meta name="description" content="Get in touch with Nalunkuma Dianah Lwanga - Full-Stack Developer ready to collaborate on your next project">
+  <meta name="keywords" content="Contact Developer, Hire Developer, Full-Stack Developer Kampala">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;900&family=Raleway:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Color Override Styles */
+    :root {
+      --primary: #00d9ff;
+      --secondary: #00b8d4;
+      --accent: #00e5ff;
+      --dark: #000000;
+      --dark-light: #1a1a1a;
+      --text: #f1f5f9;
+      --text-light: #94a3b8;
+      --border: #2a2a2a;
+    }
+
+    body {
+      background: #000000;
+      color: var(--text);
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 50%, rgba(0, 217, 255, 0.05) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 80%, rgba(0, 229, 255, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .header {
+      background: rgba(0, 0, 0, 0.95) !important;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(0, 217, 255, 0.1);
+      border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+    }
+
+    .navmenu a {
+      color: var(--text) !important;
+    }
+
+    .navmenu a:hover,
+    .navmenu a.active {
+      color: var(--primary) !important;
+    }
+
+    .header-social-links a {
+      background: rgba(0, 217, 255, 0.1) !important;
+      border: 1px solid var(--border);
+      color: var(--text) !important;
+    }
+
+    .header-social-links a:hover {
+      background: var(--primary) !important;
+      color: #000000 !important;
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 217, 255, 0.4);
+    }
+
+    /* Hamburger Menu */
+    .mobile-nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 10px;
+      z-index: 1001;
+      background: none;
+      border: none;
+    }
+
+    .mobile-nav-toggle span {
+      width: 25px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px;
+      transition: all 0.3s;
+      display: block;
+    }
+
+    .mobile-nav-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .mobile-nav-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-nav-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    @media (max-width: 768px) {
+      .mobile-nav-toggle {
+        display: flex;
+      }
+
+      .navmenu ul {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.98);
+        backdrop-filter: blur(10px);
+        width: 250px;
+        padding: 2rem;
+        gap: 1.5rem;
+        box-shadow: -5px 0 30px rgba(0, 217, 255, 0.3);
+        border-left: 1px solid rgba(0, 217, 255, 0.3);
+        transition: right 0.3s ease-in-out;
+        height: calc(100vh - 70px);
+        z-index: 1000;
+      }
+
+      .navmenu ul.active {
+        right: 0;
+      }
+
+      .navmenu ul li a {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+        display: block;
+      }
+    }
+
+    .section-title h2 {
+      color: var(--primary) !important;
+    }
+
+    .section-title p {
+      color: var(--text-light) !important;
+    }
+
+    .info-box {
+      background: rgba(26, 26, 26, 0.6);
+      padding: 2.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: all 0.3s;
+      height: 100%;
+    }
+
+    .info-box:hover {
+      border-color: var(--primary);
+      box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+    }
+
+    .info-box h3 {
+      color: var(--text) !important;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .info-box > p {
+      color: var(--text-light) !important;
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .info-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .icon-box {
+      width: 50px;
+      height: 50px;
+      background: rgba(0, 217, 255, 0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(0, 217, 255, 0.3);
+    }
+
+    .icon-box i {
+      font-size: 1.5rem;
+      color: var(--primary) !important;
+    }
+
+    .info-item .content h4 {
+      color: var(--text) !important;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .info-item .content p {
+      color: var(--text-light) !important;
+      margin-bottom: 0.3rem;
+    }
+
+    .info-item .content a {
+      color: var(--primary) !important;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .info-item .content a:hover {
+      color: var(--secondary) !important;
+    }
+
+    .contact-form {
+      background: rgba(26, 26, 26, 0.6);
+      padding: 2.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: all 0.3s;
+    }
+
+    .contact-form:hover {
+      border-color: var(--primary);
+      box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+    }
+
+    .contact-form h3 {
+      color: var(--text) !important;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .contact-form > p {
+      color: var(--text-light) !important;
+      margin-bottom: 2rem;
+    }
+
+    .form-control {
+      background: rgba(0, 0, 0, 0.5) !important;
+      border: 1px solid var(--border) !important;
+      color: var(--text) !important;
+      padding: 0.85rem 1.2rem;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    .form-control:focus {
+      background: rgba(0, 0, 0, 0.7) !important;
+      border-color: var(--primary) !important;
+      box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+      color: var(--text) !important;
+    }
+
+    .form-control::placeholder {
+      color: var(--text-light) !important;
+    }
+
+    .contact-form .btn {
+      background: var(--primary) !important;
+      color: #000000 !important;
+      border: none;
+      padding: 0.85rem 2.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .contact-form .btn:hover {
+      background: var(--secondary) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 217, 255, 0.4);
+    }
+
+    .contact-form .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .loading,
+    .error-message,
+    .sent-message {
+      display: none;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .loading {
+      background: rgba(0, 217, 255, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(0, 217, 255, 0.3);
+    }
+
+    .sent-message {
+      background: rgba(0, 255, 136, 0.1);
+      color: #00ff88;
+      border: 1px solid rgba(0, 255, 136, 0.3);
+    }
+
+    .error-message {
+      background: rgba(255, 68, 68, 0.1);
+      color: #ff4444;
+      border: 1px solid rgba(255, 68, 68, 0.3);
+    }
+
+    .quick-contact-card {
+      background: rgba(26, 26, 26, 0.6);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: all 0.3s;
+      height: 100%;
+    }
+
+    .quick-contact-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+    }
+
+    .quick-contact-card i {
+      color: var(--primary) !important;
+    }
+
+    .quick-contact-card h4 {
+      color: var(--text) !important;
+      margin-bottom: 0.8rem;
+    }
+
+    .quick-contact-card p {
+      color: var(--text-light) !important;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-outline-primary {
+      background: transparent !important;
+      color: var(--primary) !important;
+      border: 2px solid var(--primary) !important;
+      padding: 0.6rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-outline-primary:hover {
+      background: var(--primary) !important;
+      color: #000000 !important;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(0, 217, 255, 0.2);
+    }
+
+    footer p,
+    footer .credits {
+      color: var(--text-light) !important;
+    }
+
+    footer strong {
+      color: var(--primary) !important;
+    }
+
+    .social-links a {
+      background: rgba(0, 217, 255, 0.1) !important;
+      border: 1px solid var(--border);
+      color: var(--text) !important;
+    }
+
+    .social-links a:hover {
+      background: var(--primary) !important;
+      color: #000000 !important;
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 217, 255, 0.4);
+    }
+
+    .scroll-top {
+      background: var(--primary) !important;
+      color: #000000 !important;
+    }
+
+    .scroll-top:hover {
+      background: var(--secondary) !important;
+      box-shadow: 0 5px 15px rgba(0, 217, 255, 0.4);
+    }
+
+    .text-muted {
+      color: var(--text-light) !important;
+    }
+
+    h3.text-center {
+      color: var(--text) !important;
+    }
+  </style>
+</head>
+
+<body class="contact-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-icons">
+        <a href="https://https://github.com/dianah-nl" title="GitHub">◉</a>
+        <a href="https://www.linkedin.com/in/nalunkuma-dianah-lwanga" title="LinkedIn">in</a>
+        <a href="tel:+256759412486" title="Phone">☎</a>
+      </div>
+  
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Let's Connect</h2>
+        <p>Ready to bring your ideas to life? Whether you're looking for a dedicated developer for your team or need someone to build your next web application, I'm here to help turn your vision into reality.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box">
+
+              <h3>Contact Information</h3>
+              <p>I'm always excited to discuss new opportunities, collaborate on innovative projects, or connect with fellow tech enthusiasts.</p>
+
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                <div class="content">
+                  <h4>Location</h4>
+                  <p>Kampala</p>
+                  <p>Uganda</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-telephone"></i></div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p><a href="tel:+256785380800">+256 759 412486</a></p>
+                  <p class="text-muted small">Mon-Fri, 9AM - 6PM EAT</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-envelope"></i></div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p><a href="mailto:dianah6ln@gmail.com">dianah6ln@gmail.com</a></p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-code-square"></i></div>
+                <div class="content">
+                  <h4>Professional Links</h4>
+                  <p><a href="https://github.com/dianah-nl" target="_blank"><i class="bi bi-github"></i> GitHub</a></p>
+                  <p><a href="https://www.linkedin.com/in/nalunkuma-dianah-lwanga" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+
+            <div class="contact-form">
+
+              <h3>Send Me a Message</h3>
+              <p>Have a project in mind? Fill out the form below and I'll respond ASAP.</p>
+
+              <!-- EmailJS Contact Form -->
+              <form id="contact-form" class="php-email-form">
+
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" name="from_name" placeholder="Your Name *" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="from_email" placeholder="Your Email *" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" name="company" placeholder="Company/Organization">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="tel" class="form-control" name="phone" placeholder="Phone Number">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject *" required>
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Tell me about your project or opportunity... *" required></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">
+                      <i class="bi bi-hourglass-split"></i> Sending your message...
+                    </div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      <i class="bi bi-check-circle"></i> Thank you! Your message has been sent successfully. I'll reply within 24 hours.
+                    </div>
+                    <button type="submit" class="btn" id="submit-btn">
+                      Send Message <i class="bi bi-send"></i>
+                    </button>
+                  </div>
+
+                </div>
+
+              </form>
+
+              <div class="mt-4 text-center">
+                <p class="text-muted"><small>* Required fields. Your info is confidential.</small></p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row mt-5 g-4">
+          <div class="col-12">
+            <h3 class="text-center mb-4">Prefer Other Ways to Connect?</h3>
+          </div>
+
+          <div class="col-md-4">
+            <div class="quick-contact-card text-center p-4">
+              <i class="bi bi-calendar-check display-4 mb-3"></i>
+              <h4>Schedule a Call</h4>
+              <p>Book a 30-minute consultation</p>
+              <a href="mailto:dianah6ln@gmail.com?subject=Schedule%20a%20Call" class="btn btn-sm btn-outline-primary">Request Meeting</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="quick-contact-card text-center p-4">
+              <i class="bi bi-file-earmark-text display-4 mb-3"></i>
+              <h4>Download Resume</h4>
+              <p>Get a full overview of my experience</p>
+              <a href="assets/resume/Simbulireki_Wingard_Resume.pdf" class="btn btn-sm btn-outline-primary" download>Download CV</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="quick-contact-card text-center p-4">
+              <i class="bi bi-whatsapp display-4 mb-3"></i>
+              <h4>WhatsApp</h4>
+              <p>Send me a quick message</p>
+              <a href="https://wa.me/256759412486" class="btn btn-sm btn-outline-primary" target="_blank">Chat Now</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© Copyright <strong>Nalunkuma Dianah Lwanga</strong>. All Rights Reserved</p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/dianah-nl" title="GitHub">◉</a>
+        <a href="https://www.linkedin.com/in/nalunkuma-dianah-lwanga" title="LinkedIn">in</a>
+        <a href="tel:+256759412486" title="Phone">☎</a>
+      </div>
+      <div class="credits">
+        Kampala, Uganda | dianah6ln@gmail.com | +256 759 412486
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script> 
+
+  <!-- EmailJS Configuration and Form Handler -->
+  <script>
+    // EmailJS Configuration with Auto-Reply
+(function() {
+  // Initialize EmailJS with your Public Key
+  emailjs.init("zC-63oNkWdkqx5haH");
+  
+  // Get form elements
+  const contactForm = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const loadingDiv = document.querySelector('.loading');
+  const errorDiv = document.querySelector('.error-message');
+  const successDiv = document.querySelector('.sent-message');
+
+  // Form submission handler
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Show loading state
+    loadingDiv.style.display = 'block';
+    errorDiv.style.display = 'none';
+    successDiv.style.display = 'none';
+    submitBtn.disabled = true;
+
+    // Get form data
+    const formData = new FormData(this);
+    const templateParams = {
+      from_name: formData.get('from_name'),
+      from_email: formData.get('from_email'),
+      to_email: formData.get('from_email'), // Add this for auto-reply
+      company: formData.get('company'),
+      phone: formData.get('phone'),
+      subject: formData.get('subject'),
+      message: formData.get('message')
+    };
+
+    // Send the main email to you
+    emailjs.sendForm(
+      'service_xvfcvrx',    // Your service ID
+      'template_4e2sgmw',   // Your main template ID
+      this
+    )
+    .then(function(response) {
+      console.log('Main email sent successfully!', response.status, response.text);
+      
+      // After main email is sent, send auto-reply to the user
+      return emailjs.send(
+        'service_xvfcvrx',    // Same service ID
+        'template_wij4ak1',   // Your auto-reply template ID
+        templateParams        // Send as object with all parameters
+      );
+    })
+    .then(function(response) {
+      console.log('Auto-reply sent successfully!', response.status, response.text);
+      
+      // Hide loading, show success
+      loadingDiv.style.display = 'none';
+      successDiv.style.display = 'block';
+      submitBtn.disabled = false;
+      
+      // Reset form after 5 seconds
+      setTimeout(function() {
+        contactForm.reset();
+        successDiv.style.display = 'none';
+      }, 5000);
+      
+    })
+    .catch(function(error) {
+      console.log('FAILED...', error);
+      
+      // Hide loading, show error
+      loadingDiv.style.display = 'none';
+      errorDiv.style.display = 'block';
+      errorDiv.textContent = 'Oops! Something went wrong. Please try again or email me directly at simbulirekiwinga@gmail.com';
+      submitBtn.disabled = false;
+    });
+  });
+})();
+
+  </script>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    // Mobile menu toggle
+    const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+    const navMenu = document.querySelector('.navmenu ul');
+
+    if (mobileNavToggle) {
+      mobileNavToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll('.navmenu ul li a').forEach(link => {
+        link.addEventListener('click', function() {
+          mobileNavToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!mobileNavToggle.contains(event.target) && !navMenu.contains(event.target)) {
+          mobileNavToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
